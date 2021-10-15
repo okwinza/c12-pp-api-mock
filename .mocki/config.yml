@@ -1,9 +1,9 @@
 name: mocki
+  port: 3000
   endpoints:
-    - path: /api/payment/processor/resolve
-      method: POST
+    - path: /hello
+      method: get
       responses:
         - statusCode: 200
           body:
-            invoice_id: !Fake phoneNumber
-            client_id: !Fake phoneNumber
+            message: Hello from Mocki!
