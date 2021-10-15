@@ -1,0 +1,9 @@
+name: mocki
+  endpoints:
+    - path: /api/payment/processor/resolve
+      method: POST
+      responses:
+        - statusCode: 200
+          body:
+            invoice_id: !Fake phoneNumber
+            client_id: !Fake phoneNumber
